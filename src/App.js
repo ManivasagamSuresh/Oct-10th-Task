@@ -7,6 +7,7 @@ import Topbar from './Topbar';
 import Dashboard from './Dashboard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Users from './Users';
+// import { useEffect } from 'react';
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
       <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <Topbar/>
+        {/* {useEffect(()=>{
+          <Dashboard/>
+        },[])} */}
         <Routes>
+        <Route path="" element={<Dashboard/>}></Route>
           <Route path="/dashboard" element={<Dashboard/>}></Route>
           <Route path="/users" element={<Users/>}></Route>
         </Routes>
