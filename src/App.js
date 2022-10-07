@@ -8,6 +8,8 @@ import Dashboard from './Dashboard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Users from './Users';
 // import { useEffect } from 'react';
+import User_create from './User_create';
+import View_User from './View_User';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="" element={<Dashboard/>}></Route>
           <Route path="/dashboard" element={<Dashboard/>}></Route>
           <Route path="/users" element={<Users/>}></Route>
+          <Route path="/user_create" element={<User_create/>}></Route>
+          <Route path="/user/:id" element={<View_User/>}></Route>
         </Routes>
         {/* <Dashboard/> */}
       </div>
