@@ -83,7 +83,8 @@ function Users() {
                                             <td>{user.DOB}</td>
                                             <td>{user.gender}</td>
                                             <td>
-                                                <Link className='btn btn-primary' to={`/user/${user.id}`}>View</Link>
+                                                <Link className='btn btn-primary' to={`/user/${user.id}`}>View User</Link>
+                                                <Link className='btn btn-primary ms-3' to={`/edituser/${user.id}`}>Edit User</Link>
                                             </td>
                                         </tr>
                                   

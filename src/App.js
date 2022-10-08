@@ -10,6 +10,8 @@ import Users from './Users';
 // import { useEffect } from 'react';
 import User_create from './User_create';
 import View_User from './View_User';
+import Edit_User from './Edit_User';
+import Edit_Profile from './Edit_Profile';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/users" element={<Users/>}></Route>
           <Route path="/user_create" element={<User_create/>}></Route>
           <Route path="/user/:id" element={<View_User/>}></Route>
+          <Route path="/edituser/:id" element={<Edit_User/>}></Route>
+          <Route path="/editprofile" element={<Edit_Profile/>}></Route>
         </Routes>
         {/* <Dashboard/> */}
       </div>
