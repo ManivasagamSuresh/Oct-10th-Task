@@ -37,6 +37,9 @@ function User_create() {
             if (values.phone.toString().length !== 10) {
                 error.phone = 'please enter a valid Phone Number'
             }
+            if(!values.DOB){
+                error.DOB="please select your DOB"
+            }
             // console.log(values.DOB);
             // console.log(values.DOB.split('-'));
             console.log(values.DOB.split('-')[0]);
@@ -46,6 +49,7 @@ function User_create() {
             if (age < 18) {
                 error.DOB = "you must be above 18"
             }
+            
             return error;
         },
         onSubmit: async (values) => {
