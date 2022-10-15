@@ -16,6 +16,8 @@ import { useContext } from 'react';
 import { UserContext } from './context';
 import Login from './Login'
 import PortalLayout from './PortalLayout'
+import Products from './Products';
+import Edit_Products from './Edit_Products';
 
 function App() {
   const userdata = useContext(UserContext)
@@ -31,7 +33,8 @@ function App() {
           <Route path="Users/user/:id" element={<View_User />}></Route>
           <Route path="Users/edituser/:id" element={<Edit_User />}></Route>
           <Route path="Users/user/:id/editprofile" element={<Edit_Profile />}></Route>
-
+          <Route path="Products" element={<Products />}></Route>
+          <Route path="Products/EditProducts/:id" element={<Edit_Products />}></Route>
         </Route>
 
       </Routes>

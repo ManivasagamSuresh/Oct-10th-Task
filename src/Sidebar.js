@@ -42,6 +42,15 @@ function Sidebar() {
         </Link>
         
     </li>
+
+    <li class="nav-item">
+        <Link to={"Products"} class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Products</span>
+        </Link>
+        
+    </li>
 </ul>
 
   )
