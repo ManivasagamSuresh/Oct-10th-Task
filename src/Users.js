@@ -23,7 +23,7 @@ function Users() {
         <div class="container-fluid">
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 class="h3 mb-0 text-gray-800">Users</h1>
-                <Link to="/User_create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                <Link to="user_create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                     class="fas fa-download fa-sm text-white-50"></i> Create Users</Link>
             </div>
             {
@@ -78,8 +78,8 @@ function Users() {
                                                 <td>{user.DOB}</td>
                                                 <td>{user.gender}</td>
                                                 <td>
-                                                    <Link className='btn btn-primary' to={`/user/${user.id}`}>View User</Link>
-                                                    <Link className='btn btn-primary mt-1' to={`/edituser/${user.id}`}>Edit User</Link>
+                                                    <Link className='btn btn-primary' to={`user/${user.id}`}>View User</Link>
+                                                    <Link className='btn btn-primary mt-1' to={`edituser/${user.id}`}>Edit User</Link>
                                                 </td>
                                             </tr>
 

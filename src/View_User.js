@@ -33,7 +33,7 @@ function View_User() {
                     gender: male
                 </div>
                 <td>
-                    <Link className='btn btn-primary ms-3' to={`/editprofile`}>Edit Profile</Link>
+                    <Link className='btn btn-primary ms-3' to={`editprofile`}>Edit Profile</Link>
                 </td>
             </div>
         </div>
